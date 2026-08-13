@@ -54,6 +54,16 @@ const App = () => {
       badge: "Nuevo",
       isFavorite: false,
     },
+    {
+      id: 5,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlMvc5boGvt-y7BWlKsTT_UG1hN3wy1CZQ6QHjFjDm9sTgeHNKzbKXil4&s=10",
+      location: "El salón mas Chido de la UVAQ",
+      distance: "Arriba del edificio C",
+      dates: "1-5 de dic.",
+      price: "1,200",
+      rating: "5.55",
+      isFavorite: true,
+    }
   ];
 
   return (
