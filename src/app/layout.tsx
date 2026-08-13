@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "StayFinder",
   description: "Encuentra espacios increíbles para tu próxima estancia.",
 };
-
+//just testing
 export default function RootLayout({
   children,
 }: Readonly<{
