@@ -2,24 +2,18 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-cyan-600" aria-label="AquaReserve inicio">
-          <svg
-            className="w-8 h-8"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm0 1.5c4.556 0 8.25 3.694 8.25 8.25s-3.694 8.25-8.25 8.25-8.25-3.694-8.25-8.25 3.694-8.25 8.25-8.25zm-2.25 4.5v1.5h4.5v-1.5h-4.5zm0 3v1.5h4.5v-1.5h-4.5zm0 3v1.5h4.5v-1.5h-4.5z" />
-          </svg>
-          <span className="font-bold text-2xl tracking-tight">AquaReserve</span>
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="AquaReserve inicio">
+          <div className="w-9 h-9 rounded-xl bg-cyan-500 text-white flex items-center justify-center shadow-sm group-hover:bg-cyan-600 transition-colors">
+            <span className="text-lg font-bold">A</span>
+          </div>
+          <span className="font-bold text-2xl tracking-tight text-gray-950">AquaReserve</span>
         </Link>
 
         <Link
           href="/create-property"
-          className="rounded-full bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium py-2.5 px-5 transition"
+          className="rounded-full border border-gray-300 bg-white hover:border-gray-500 hover:shadow-sm text-gray-800 text-sm font-semibold py-2.5 px-5 transition-all"
         >
           Pon tu espacio
         </Link>
