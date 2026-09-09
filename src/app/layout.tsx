@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "StayFinder",
+  title: "AquaReserve",
   description: "Encuentra espacios increíbles para tu próxima estancia.",
 };
 
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );
-}   
+}
