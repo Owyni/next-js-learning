@@ -3,6 +3,8 @@ import Header from "@/src/components/Header";
 import ReservationForm from "@/src/components/ReservationForm";
 import { getProperty } from "@/src/db/queries";
 
+export const dynamic = "force-dynamic";
+
 export default async function PropertyPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const property = await getProperty(Number(id));
