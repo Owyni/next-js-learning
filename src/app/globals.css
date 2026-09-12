@@ -1,45 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --aqua: #0891b2;
-  --aqua-light: #ecfeff;
-  --ink: #172033;
+  --ocean: #0ea5e9;
+  --sponge: #fde047;
+  --ink: #17324d;
 }
 
-html {
-  background: #f8fafc;
-}
+html { background: #38bdf8; }
 
 body {
   min-height: 100vh;
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 10% 0%, rgba(103, 232, 249, 0.18), transparent 30%),
-    radial-gradient(circle at 90% 15%, rgba(186, 230, 253, 0.2), transparent 28%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbfc 55%, #f1f8fa 100%);
+  background: radial-gradient(circle at 12% 18%, rgba(255,255,255,.35) 0 5px, transparent 6px), radial-gradient(circle at 82% 12%, rgba(255,255,255,.28) 0 8px, transparent 9px), linear-gradient(180deg, #38bdf8 0%, #22d3ee 42%, #0e7490 100%);
+  background-attachment: fixed;
 }
 
-::selection {
-  background: rgb(6 182 212 / 0.18);
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
+::selection { background: rgba(253,224,71,.7); color: #17324d; }
+button, a { -webkit-tap-highlight-color: transparent; }
 
 .input {
   width: 100%;
-  border: 1px solid #d1d5db;
-  border-radius: 0.75rem;
-  padding: 0.75rem 1rem;
+  border: 2px solid #bae6fd;
+  border-radius: .9rem;
+  padding: .75rem 1rem;
   outline: none;
-  background: white;
+  background: #f0f9ff;
   transition: border-color 160ms ease, box-shadow 160ms ease;
 }
+.input:focus { border-color: #facc15; box-shadow: 0 0 0 4px rgba(250,204,21,.18); }
 
-.input:focus {
-  border-color: #06b6d4;
-  box-shadow: 0 0 0 3px rgb(6 182 212 / 0.12);
+.sponge-card {
+  background: rgba(255,255,255,.94);
+  border: 3px solid #facc15;
+  box-shadow: 0 12px 0 rgba(3,105,161,.25), 0 20px 35px rgba(8,47,73,.18);
 }
+
+.bubble { border: 2px solid rgba(255,255,255,.55); background: rgba(255,255,255,.14); border-radius: 9999px; }
